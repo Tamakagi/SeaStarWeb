@@ -3,146 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event Manager</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>SeaStarWeb</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="layout">
-      <!-- サイドバー -->
-      <aside class="sidebar">
-        <div class="logo">
-          <h2>Event Manager</h2>
-          <p>イベント管理システム</p>
-        </div>
-
-        <nav>
-          <ul>
-            <li class="active">🏠 ダッシュボード</li>
-            <li>📅 イベント一覧</li>
-            <li>➕ イベント作成</li>
-            <li>🔔 通知テンプレート</li>
-            <li>⚙️ 設定</li>
-          </ul>
-        </nav>
-
-        <div class="discord-card">
-          <h4>Discord連携</h4>
-          <p>🟢 接続済み</p>
-        </div>
-      </aside>
-
-      <!-- メイン -->
-      <main class="main">
-        <header class="header">
-          <div>
-            <h1>ダッシュボード</h1>
-            <p>イベントの管理とスケジュールを確認できます</p>
-          </div>
-
-          <button class="create-btn">+ 新しいイベントを作成</button>
-        </header>
-
-        <!-- 次回イベント -->
-        <section class="card next-event">
-          <h2>📅 次回のイベント</h2>
-
-          <div class="event-info">
-            <div class="event-icon">👥</div>
-
-            <div class="event-detail">
-              <span class="badge">募集中</span>
-
-              <h3>第5回 雑談会</h3>
-
-              <p>2026/06/20(土) 21:00</p>
-              <p>#イベント告知</p>
-            </div>
-
-            <div class="notification-status">
-              <div class="status-item done">
-                <strong>募集投稿</strong>
-                <span>送信済み</span>
-              </div>
-
-              <div class="status-item">
-                <strong>リマインド</strong>
-                <span>未送信</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- イベント一覧 -->
-        <section class="card">
-          <h2>📅 今後のイベント一覧</h2>
-
-          <table>
-            <thead>
-              <tr>
-                <th>開催日時</th>
-                <th>イベント名</th>
-                <th>状態</th>
-                <th>通知状況</th>
-                <th>操作</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td>
-                  2026/06/20<br />
-                  <strong>21:00</strong>
-                </td>
-
-                <td>
-                  <strong>第5回 雑談会</strong><br />
-                  月例の雑談イベント
-                </td>
-
-                <td>
-                  <span class="badge">募集中</span>
-                </td>
-
-                <td>
-                  募集：送信済み<br />
-                  リマインド：未送信
-                </td>
-
-                <td>
-                  <button class="edit-btn">編集</button>
-                  <button class="delete-btn">削除</button>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  2026/06/25<br />
-                  <strong>22:00</strong>
-                </td>
-
-                <td>
-                  <strong>定例会</strong><br />
-                  月末の定例ミーティング
-                </td>
-
-                <td>
-                  <span class="badge waiting"> 募集前 </span>
-                </td>
-
-                <td>
-                  募集：未送信<br />
-                  リマインド：未送信
-                </td>
-
-                <td>
-                  <button class="edit-btn">編集</button>
-                  <button class="delete-btn">削除</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </main>
-    </div>
+    <main class="hero">
+      <div class="hero__overlay">
+        <h1 class="hero__title">ComingSoon..</h1>
+        <p class="hero__subtitle">SeaStar Web Site</p>
+      </div>
+    </main>
   </body>
 </html>
