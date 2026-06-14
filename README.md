@@ -1,2 +1,1 @@
-# event-manage
-forVRChat
+# SeaStarWeb
