@@ -1,24 +1,24 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-}
-
 .hero {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/background.jpg");
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/vrc-avatar-thumbnail.png");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+  opacity: 0.5;
 }
 .hero__overlay {
+  position: relative;
+  z-index: 1;
   padding: 2rem 4rem;
   background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(6px);
@@ -29,10 +29,4 @@ body {
   font-size: clamp(2rem, 5vw, 4rem);
   text-align: center;
   letter-spacing: 0.1em;
-}
-.hero__subtitle {
-  margin-top: 1rem;
-  color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  font-size: 1rem;
 }/*# sourceMappingURL=style.css.map */
