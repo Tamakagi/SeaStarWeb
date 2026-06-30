@@ -1,0 +1,17 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  padding: 0.9rem 2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+.button--primary {
+  background: #ffffff;
+  color: #111;
+}
+.button--primary:hover {
+  transform: translateY(-2px);
+}/*# sourceMappingURL=button.css.map */

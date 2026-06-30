@@ -3,15 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SeaStarWeb</title>
+    <title>SeaStar</title>
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/header.css" />
   </head>
+
   <body>
-    <main class="hero">
-      <div class="hero__overlay">
-        <h1 class="hero__title">ComingSoon..</h1>
-      </div>
+    <header id="header"></header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__overlay">
+          <div class="hero__content">
+            <p class="hero__catch">VRChat Private RP Event</p>
+
+            <h1 class="hero__title">SeaStar</h1>
+
+            <p class="hero__description">
+              落ち着いた空間で、特別なひとときを。
+            </p>
+
+            <div class="hero__buttons">
+              <a href="#about" class="button button--primary"> イベント概要 </a>
+            </div>
+          </div>
+
+          <div class="hero__scroll">Scroll</div>
+        </div>
+      </section>
     </main>
+
+    <script src="./js/load-header.js"></script>
   </body>
 </html>

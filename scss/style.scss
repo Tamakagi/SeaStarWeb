@@ -2,8 +2,8 @@
     min-height: 100vh;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     position: relative;
     overflow: hidden;
@@ -16,27 +16,80 @@
         background-image: url("../assets/vrc-avatar-thumbnail.png");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 90%;
+        background-size: cover;
 
-        opacity: 0.5; // 数字を小さくするとより薄くなる
+        transform: scale(1.05);
     }
 
     &__overlay {
-        position: relative;
+        position: absolute;
+        inset: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 2rem;
+
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.70)
+        );
+
         z-index: 1;
+    }
 
-        padding: 2rem 4rem;
+    &__content {
+        width: min(90%, 720px);
+        text-align: center;
+    }
 
-        background: rgba(0, 0, 0, 0.45);
-        backdrop-filter: blur(6px);
+    &__catch {
+        margin-bottom: 1rem;
 
-        border-radius: 16px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
     }
 
     &__title {
+        margin-bottom: 1.5rem;
+
         color: #fff;
-        font-size: clamp(2rem, 5vw, 4rem);
-        text-align: center;
+        font-size: clamp(4rem, 10vw, 8rem);
+        font-weight: 700;
         letter-spacing: 0.1em;
+        line-height: 1;
+    }
+
+    &__description {
+        margin-bottom: 3rem;
+
+        color: rgba(255, 255, 255, 0.9);
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.8;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    &__scroll {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.875rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
     }
 }
