@@ -59,13 +59,16 @@
 }
 
 @media (max-width: 768px) {
-  .info__content {
-    padding: 6rem 0;
+  .info__post {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    justify-content: center;
   }
-  .info__description {
-    margin-bottom: 3rem;
+  .info__button {
+    margin-top: 2rem;
   }
-  .info__timeline {
-    padding: 1rem;
+  .info .twitter-tweet {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=info.css.map */

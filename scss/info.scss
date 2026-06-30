@@ -85,17 +85,22 @@
 
     .info {
 
-        &__content {
-            padding: 6rem 0;
-        }
+    &__post {
+        width: 100%;
+        max-width: 560px;
 
-        &__description {
-            margin-bottom: 3rem;
-        }
-
-        &__timeline {
-            padding: 1rem;
-        }
+        display: flex;
+        justify-content: center;
     }
+
+    &__button {
+        margin-top: 2rem;
+    }
+
+    .twitter-tweet {
+        width: 100% !important;
+    }
+
+}
 
 }
