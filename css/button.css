@@ -6,7 +6,8 @@
   padding: 0.9rem 2rem;
   border-radius: 999px;
   text-decoration: none;
-  transition: 0.25s;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  min-height: 44px;
 }
 .button--primary {
   background: #ffffff;
@@ -14,4 +15,17 @@
 }
 .button--primary:hover {
   transform: translateY(-2px);
+}
+@media (max-width: 600px) {
+  .button {
+    width: 100%;
+    max-width: 320px;
+    min-width: unset;
+  }
+  .button:active {
+    transform: scale(0.98);
+  }
+  .button--primary:hover {
+    transform: none;
+  }
 }/*# sourceMappingURL=button.css.map */

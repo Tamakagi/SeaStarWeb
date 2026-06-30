@@ -9,7 +9,10 @@
     border-radius: 999px;
     text-decoration: none;
 
-    transition: 0.25s;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+
+    // スマホでも押しやすい最小サイズ確保
+    min-height: 44px;
 
     &--primary {
         background: #ffffff;
@@ -20,4 +23,18 @@
         transform: translateY(-2px);
     }
 
+    // モバイルではhover前提を弱める
+    @media (max-width: 600px) {
+        width: 100%;
+        max-width: 320px;
+        min-width: unset;
+
+        &:active {
+            transform: scale(0.98);
+        }
+
+        &--primary:hover {
+            transform: none;
+        }
+    }
 }
