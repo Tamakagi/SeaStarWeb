@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 .info {
   min-height: 100vh;
   min-height: 100svh;
