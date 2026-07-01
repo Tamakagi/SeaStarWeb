@@ -6,7 +6,7 @@
     width: 100%;
     height: 80px;
 
-    padding: 0 3rem;
+    padding: 0 3rem 0 0rem;
 
     display: flex;
     justify-content: space-between;
@@ -20,13 +20,16 @@
 
     // ロゴ
     &__logo {
-        color: #333;
+        display: flex;
+        align-items: center;
+        height: 80px;      // ヘッダーと同じ高さ
+        overflow: hidden;  // はみ出した部分は見えない
         text-decoration: none;
-        font-size: 1.5rem;
-        font-weight: bold;
 
         img {
-            width: 120px;
+            width: 220px;
+            height: auto;
+            display: block;
         }
     }
 
