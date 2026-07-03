@@ -47,10 +47,12 @@ function closeModalHandler() {
 
 // モーダルを表示する関数
 function showModal(cast) {
-  modalImage.src = `./assets/cast-detail/${cast.image}`;
-  modal.classList.add("is-open");
-}
+  modalImage.onload = () => {
+    modal.classList.add("is-open");
+  };
 
+  modalImage.src = `./assets/cast-detail/${cast.image}`;
+}
 // クロスボタンでモーダルを閉じる
 closeModal.addEventListener("click", closeModalHandler);
 
