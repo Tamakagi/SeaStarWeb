@@ -25,7 +25,8 @@ fetch("data/casts-data.json")
         </div>
       `;
       //キャストカードにクリックイベントを追加
-      card.addEventListener("click", () => {
+      card.addEventListener("pointerdown", (event) => {
+        event.preventDefault();
         showModal(cast);
       });
       castGrid.appendChild(card);
