@@ -120,6 +120,55 @@ body {
 }
 
 /* ==========================
+    Modal
+========================== */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+.modal.is-open {
+  display: flex;
+}
+
+.modal-content {
+  position: relative;
+  width: 40%;
+}
+
+#modal-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.close:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* ==========================
     Responsive
 ========================== */
 @media (max-width: 1024px) {
@@ -143,6 +192,9 @@ body {
   }
   .cast-card__name {
     font-size: 1.2rem;
+  }
+  .modal-content {
+    width: 90%;
   }
 }
 @media (max-width: 480px) {
