@@ -25,8 +25,7 @@ fetch("data/casts-data.json")
         </div>
       `;
       //キャストカードにクリックイベントを追加
-      card.addEventListener("pointerdown", (event) => {
-        event.preventDefault();
+      card.addEventListener("click", () => {
         showModal(cast);
       });
       castGrid.appendChild(card);
@@ -58,10 +57,8 @@ function showModal(cast) {
 closeModal.addEventListener("click", closeModalHandler);
 
 // モーダル外をクリックしたときにも閉じる
-modal.addEventListener("pointerdown", (event) => {
+modal.addEventListener("click", (event) => {
   if (event.target === modal) {
-    event.preventDefault();
-    event.stopPropagation();
     closeModalHandler();
   }
 });
