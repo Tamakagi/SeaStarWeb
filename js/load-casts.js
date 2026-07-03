@@ -57,7 +57,7 @@ function showModal(cast) {
 closeModal.addEventListener("click", closeModalHandler);
 
 // モーダル外をクリックしたときにも閉じる
-window.addEventListener("click", (event) => {
+window.addEventListener("pointerdown", (event) => {
   if (event.target === modal) {
     closeModalHandler();
   }
