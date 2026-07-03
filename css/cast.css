@@ -51,31 +51,19 @@ body {
 .cast__content {
   width: min(1200px, 100%);
 }
-.cast__catch {
-  margin-bottom: 1rem;
-  text-align: center;
-  color: rgba(30, 30, 30, 0.75);
-  font-size: clamp(0.8rem, 1.5vw, 1rem);
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-}
 .cast__title {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   text-align: center;
   color: #222;
   font-size: clamp(2.8rem, 5vw, 4rem);
   font-weight: 700;
   text-shadow: 0 2px 10px rgba(255, 255, 255, 0.8);
 }
-.cast__description {
-  margin-bottom: 4rem;
-  text-align: center;
-  color: #444;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  line-height: 1.8;
-  font-weight: 500;
-}
-.cast__grid {
+
+/* ==========================
+    Grid
+========================== */
+.cast-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
@@ -85,9 +73,7 @@ body {
     Card
 ========================== */
 .cast-card {
-  display: block;
   overflow: hidden;
-  text-decoration: none;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(255, 255, 255, 0.95);
@@ -98,31 +84,36 @@ body {
   transform: translateY(-8px);
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.18);
 }
+.cast-card__image-wrapper {
+  overflow: hidden;
+}
 .cast-card__image {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 4/5;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
   display: block;
-  background: #eee;
 }
 .cast-card__body {
   padding: 1.5rem;
 }
 .cast-card__name {
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem;
   color: #222;
   font-size: 1.4rem;
   font-weight: 700;
 }
 .cast-card__role {
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
   color: #4969d8;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.08em;
 }
 .cast-card__description {
+  margin: 0;
   color: #555;
   line-height: 1.8;
   font-size: 0.95rem;
@@ -132,7 +123,7 @@ body {
     Responsive
 ========================== */
 @media (max-width: 1024px) {
-  .cast__grid {
+  .cast-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -140,12 +131,12 @@ body {
   .cast__overlay {
     padding: 2rem 1rem;
   }
-  .cast__grid {
+  .cast-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  .cast__description {
-    margin-bottom: 3rem;
+  .cast-card__image {
+    aspect-ratio: 1;
   }
   .cast-card__body {
     padding: 1.2rem;
@@ -155,7 +146,7 @@ body {
   }
 }
 @media (max-width: 480px) {
-  .cast__grid {
+  .cast-grid {
     grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=cast.css.map */

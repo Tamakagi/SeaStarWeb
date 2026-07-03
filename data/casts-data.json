@@ -1,0 +1,70 @@
+{
+  "casts": [
+    {
+      "name": "ユリウス・シースター",
+      "role": "家令(ハウススチュワード)",
+      "description": "役者:---yuri---",
+      "image": "yuri.webp"
+    },
+    {
+      "name": "てばさき",
+      "role": "執事",
+      "description": "役者:てばサキ",
+      "image": "tebasaki.webp"
+    },
+    {
+      "name": "たま",
+      "role": "キッチンメイド",
+      "description": "役者:たまかぎ",
+      "image": "tama.webp"
+    },
+    {
+      "name": "ルミア",
+      "role": "レディーズメイド",
+      "description": "役者:nano_0420",
+      "image": "lumia.webp"
+    },
+    {
+      "name": "ミナ",
+      "role": "ウェイティングメイド",
+      "description": "役者:さいみな",
+      "image": "mina.webp"
+    },
+    {
+      "name": "ノア",
+      "role": "ハウスメイド",
+      "description": "役者:のあちー",
+      "image": "noa.webp"
+    },
+    {
+      "name": "ティア",
+      "role": "ハウスメイド",
+      "description": "役者:アーティ",
+      "image": "tia.webp"
+    },
+    {
+      "name": "キノ",
+      "role": "パーラーメイド",
+      "description": "役者:-キノ-",
+      "image": "kino.webp"
+    },
+    {
+      "name": "エリリ<br>(洗礼名:ルーシア)",
+      "role": "ウェイティングメイド見習い",
+      "description": "役者:エリリ・エリ",
+      "image": "eriri.webp"
+    },
+    {
+      "name": "ナオリア・ローズ",
+      "role": "ナースメイド",
+      "description": "役者:HIMENA1224",
+      "image": "himena.webp"
+    },
+    {
+      "name": "レガ",
+      "role": "ウェイティングメイド",
+      "description": "役者:rega(れが)",
+      "image": "rega.webp"
+    }
+  ]
+}
