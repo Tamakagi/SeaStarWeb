@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.about {
+  min-height: 100vh;
+  min-height: 100svh;
+  position: relative;
+  background: url("../assets/back.png") center/cover no-repeat fixed;
+}
+.about__overlay {
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(4px);
+}
+.about__content {
+  width: min(1200px, 92%);
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__catch {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.55);
+}
+.about__title {
+  margin-bottom: 1.25rem;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #222;
+}
+.about__description {
+  max-width: 640px;
+  margin-bottom: 4rem;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+.about__block {
+  width: 100%;
+  max-width: 720px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+.about__block h2 {
+  margin: 0 0 1.2rem;
+  font-size: 1.5rem;
+  color: #222;
+}
+.about__block ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+.about__block ul li {
+  margin-bottom: 0.8rem;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.75);
+}
+.about__block ul li:last-child {
+  margin-bottom: 0;
+}
+.about__post {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.about__button {
+  margin-top: 2.5rem;
+}
+.about .twitter-tweet,
+.about .twitter-timeline {
+  width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .about__content {
+    padding: 6rem 0 4rem;
+  }
+  .about__description {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  .about__block {
+    padding: 1.5rem;
+  }
+  .about__block h2 {
+    font-size: 1.3rem;
+  }
+  .about__block ul {
+    padding-left: 1.25rem;
+  }
+  .about__block ul li {
+    font-size: 0.95rem;
+  }
+  .about__post {
+    width: 100%;
+    max-width: 560px;
+  }
+  .about__button {
+    margin-top: 2rem;
+  }
+  .about .twitter-tweet {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=about.css.map */

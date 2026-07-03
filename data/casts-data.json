@@ -3,68 +3,140 @@
     {
       "name": "ユリウス・シースター",
       "role": "家令(ハウススチュワード)",
-      "description": "役者:---yuri---",
+      "description": "---yuri---",
       "image": "yuri.webp"
     },
     {
       "name": "てばさき",
       "role": "執事",
-      "description": "役者:てばサキ",
+      "description": "てばサキ",
       "image": "eira.webp"
     },
     {
       "name": "たま",
       "role": "キッチンメイド",
-      "description": "役者:たまかぎ",
+      "description": "たまかぎ",
       "image": "tama.webp"
     },
     {
       "name": "ルミア",
       "role": "レディーズメイド",
-      "description": "役者:nano_0420",
+      "description": "nano_0420",
       "image": "lumia.webp"
     },
     {
       "name": "ミナ",
       "role": "ウェイティングメイド",
-      "description": "役者:さいみな",
+      "description": "さいみな",
       "image": "mina.webp"
     },
     {
       "name": "ノア",
       "role": "ハウスメイド",
-      "description": "役者:のあちー",
+      "description": "のあちー",
       "image": "noa.webp"
     },
     {
       "name": "ティア",
       "role": "ハウスメイド",
-      "description": "役者:アーティ",
+      "description": "アーティ",
       "image": "tia.webp"
     },
     {
-      "name": "キノ",
+      "name": "リゼ",
       "role": "パーラーメイド",
-      "description": "役者:-キノ-",
+      "description": "-キノ-",
       "image": "kino.webp"
     },
     {
       "name": "エリリ<br>(洗礼名:ルーシア)",
       "role": "ウェイティングメイド見習い",
-      "description": "役者:エリリ・エリ",
+      "description": "エリリ・エリ",
       "image": "eriri.webp"
     },
     {
       "name": "ナオリア・ローズ",
       "role": "ナースメイド",
-      "description": "役者:HIMENA1224",
+      "description": "HIMENA1224",
       "image": "himena.webp"
     },
     {
-      "name": "レガ",
+      "name": "レガリア",
       "role": "ウェイティングメイド",
-      "description": "役者:rega(れが)",
+      "description": "rega(れが)",
       "image": "rega.webp"
+    },
+    {
+      "name": "アキラ",
+      "role": "キッチンメイド",
+      "description": "朝野暁",
+      "image": "アキラ.webp"
+    },
+    {
+      "name": "アトラ",
+      "role": "執事",
+      "description": "白桃Aラ兎",
+      "image": "アトラ.webp"
+    },
+    {
+      "name": "カルム",
+      "role": "スティルルームメイド",
+      "description": "ぬるまゆ。",
+      "image": "カルム.webp"
+    },
+    {
+      "name": "クラーラ",
+      "role": "ハウスメイド",
+      "description": "くらたす",
+      "image": "クラーラ.webp"
+    },
+    {
+      "name": "ティアレス",
+      "role": "執事",
+      "description": "てぃけ",
+      "image": "ティアレス.webp"
+    },
+    {
+      "name": "ハナリー",
+      "role": "ウェイティングメイド",
+      "description": "おはなまろん",
+      "image": "ハナリー.webp"
+    },
+    {
+      "name": "ベリア",
+      "role": "メイドオブオールワーク",
+      "description": "べあ_kuma",
+      "image": "ベリア.webp"
+    },
+    {
+      "name": "モニカ",
+      "role": "ハウスメイド",
+      "description": "もちタマ",
+      "image": "モニカ.webp"
+    },
+    {
+      "name": "ヨルフィア",
+      "role": "パーラーメイド",
+      "description": "よりは",
+      "image": "ヨルフィア.webp"
+    },
+    {
+      "name": "ルイ",
+      "role": "パーラーメイド",
+      "description": "ルイ(サメさん)",
+      "image": "ルイ.webp"
+    },
+    {
+      "name": "レイラ",
+      "role": "スカラリーメイド",
+      "description": "チキン食え",
+      "image": "レイラ.webp"
+    },
+    {
+      "name": "ロレイン",
+      "role": "ウェイティングメイド",
+      "description": "連絡通路",
+      "image": "ロレイン.webp"
     }
   ]
 }

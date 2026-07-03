@@ -21,7 +21,7 @@ fetch("data/casts-data.json")
         <div class="cast-card__body">
           <h2 class="cast-card__name">${cast.name}</h2>
           <p class="cast-card__role">${cast.role}</p>
-          <p class="cast-card__description">${cast.description}</p>
+          <p class="cast-card__description">役者:${cast.description}</p>
         </div>
       `;
       //キャストカードにクリックイベントを追加
