@@ -67,16 +67,34 @@
       "image": "rega.webp"
     },
     {
+      "name": "アトラ",
+      "role": "執事",
+      "description": "白桃Aラ兎",
+      "image": "アトラ.webp"
+    },
+    {
+      "name": "ティアレス",
+      "role": "執事",
+      "description": "てぃけ",
+      "image": "ティアレス.webp"
+    },
+    {
       "name": "アキラ",
       "role": "キッチンメイド",
       "description": "朝野暁",
       "image": "アキラ.webp"
     },
     {
-      "name": "アトラ",
-      "role": "執事",
-      "description": "白桃Aラ兎",
-      "image": "アトラ.webp"
+      "name": "レイラ",
+      "role": "スカラリーメイド",
+      "description": "チキン食え",
+      "image": "レイラ.webp"
+    },
+    {
+      "name": "ハナリー",
+      "role": "ウェイティングメイド",
+      "description": "おはなまろん",
+      "image": "ハナリー.webp"
     },
     {
       "name": "カルム",
@@ -89,18 +107,6 @@
       "role": "ハウスメイド",
       "description": "くらたす",
       "image": "クラーラ.webp"
-    },
-    {
-      "name": "ティアレス",
-      "role": "執事",
-      "description": "てぃけ",
-      "image": "ティアレス.webp"
-    },
-    {
-      "name": "ハナリー",
-      "role": "ウェイティングメイド",
-      "description": "おはなまろん",
-      "image": "ハナリー.webp"
     },
     {
       "name": "ベリア",
@@ -125,12 +131,6 @@
       "role": "パーラーメイド",
       "description": "ルイ(サメさん)",
       "image": "ルイ.webp"
-    },
-    {
-      "name": "レイラ",
-      "role": "スカラリーメイド",
-      "description": "チキン食え",
-      "image": "レイラ.webp"
     },
     {
       "name": "ロレイン",
