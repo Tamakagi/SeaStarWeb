@@ -6,79 +6,99 @@
 
 body {
   margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.about__title,
+.hero__title,
+.about__block h2 {
+  font-family: "Shippori Mincho", serif;
 }
 
 .about {
+  position: relative;
   min-height: 100vh;
   min-height: 100svh;
-  position: relative;
   background: url("../assets/back.png") center/cover no-repeat fixed;
 }
 .about__overlay {
   min-height: inherit;
   display: flex;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(4px);
+  background: linear-gradient(to bottom, rgba(250, 249, 246, 0.72));
+  backdrop-filter: blur(1px);
 }
 .about__content {
-  width: min(1200px, 92%);
-  padding: 8rem 0;
+  width: 92%;
+  max-width: 960px;
+  padding: 8rem 0 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .about__catch {
   margin-bottom: 0.75rem;
+  color: rgba(0, 0, 0, 0.55);
   font-size: 0.9rem;
   font-weight: 500;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.55);
 }
 .about__title {
-  margin-bottom: 1.25rem;
-  font-size: clamp(2.8rem, 7vw, 5rem);
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  margin: 0 0 2rem;
   color: #222;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 600;
+  letter-spacing: 0.12em;
 }
 .about__description {
   max-width: 640px;
   margin-bottom: 4rem;
+  color: rgba(0, 0, 0, 0.72);
   font-size: 1.05rem;
-  line-height: 1.9;
+  line-height: 2;
   text-align: center;
-  color: rgba(0, 0, 0, 0.7);
 }
 .about__block {
   width: 100%;
   max-width: 720px;
-  margin-bottom: 2rem;
-  padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  margin-bottom: 2.5rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.75);
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
 }
 .about__block h2 {
-  margin: 0 0 1.2rem;
-  font-size: 1.5rem;
+  position: relative;
+  margin: 0 0 1.75rem;
+  padding-bottom: 0.8rem;
   color: #222;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.about__block h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 2px;
+  background: #c8a96a;
 }
 .about__block ul {
   margin: 0;
-  padding-left: 1.5rem;
+  padding-left: 1.4rem;
 }
 .about__block ul li {
-  margin-bottom: 0.8rem;
-  line-height: 1.8;
+  padding: 0.35rem 0;
   color: rgba(0, 0, 0, 0.75);
+  line-height: 2;
 }
 .about__block ul li:last-child {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .about__post {
   width: 100%;
@@ -88,7 +108,7 @@ body {
   justify-content: center;
 }
 .about__button {
-  margin-top: 2.5rem;
+  margin-top: 3rem;
 }
 .about .twitter-tweet,
 .about .twitter-timeline {
@@ -99,31 +119,31 @@ body {
   .about__content {
     padding: 6rem 0 4rem;
   }
+  .about__title {
+    margin-bottom: 1.5rem;
+  }
   .about__description {
     margin-bottom: 3rem;
     font-size: 1rem;
-    line-height: 1.8;
+    line-height: 1.9;
   }
   .about__block {
-    padding: 1.5rem;
+    padding: 2rem;
   }
   .about__block h2 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
   }
   .about__block ul {
-    padding-left: 1.25rem;
+    padding-left: 1.2rem;
   }
   .about__block ul li {
     font-size: 0.95rem;
+    line-height: 1.9;
   }
   .about__post {
-    width: 100%;
     max-width: 560px;
   }
   .about__button {
     margin-top: 2rem;
-  }
-  .about .twitter-tweet {
-    width: 100% !important;
   }
 }/*# sourceMappingURL=about.css.map */
