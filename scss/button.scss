@@ -1,40 +1,70 @@
 .button {
     display: inline-flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
-    min-width: 180px;
-    padding: 0.9rem 2rem;
+    min-width: 190px;
+    min-height: 52px;
 
+    padding: .9rem 2rem;
+
+    border: 1px solid rgba(200, 169, 106, .35);
     border-radius: 999px;
+
+    background: rgba(255, 255, 255, .88);
+
+    color: #3a3a3a;
+
+    font-family: "Shippori Mincho", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+
     text-decoration: none;
 
-    transition: transform 0.25s ease, opacity 0.25s ease;
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, .08);
 
-    // スマホでも押しやすい最小サイズ確保
-    min-height: 44px;
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+
+        background: #ffffff;
+
+        border-color: #c8a96a;
+
+        color: #8b6b35;
+
+        box-shadow:
+            0 12px 32px rgba(0, 0, 0, .12);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+    }
 
     &--primary {
-        background: #ffffff;
-        color: #111;
+        background: #c8a96a;
+        border-color: #c8a96a;
+        color: #fff;
+
+        &:hover {
+            background: #b8944f;
+            border-color: #b8944f;
+            color: #fff;
+        }
     }
 
-    &--primary:hover {
-        transform: translateY(-2px);
-    }
-
-    // モバイルではhover前提を弱める
     @media (max-width: 600px) {
         width: 100%;
         max-width: 320px;
-        min-width: unset;
-
-        &:active {
-            transform: scale(0.98);
-        }
-
-        &--primary:hover {
-            transform: none;
-        }
     }
 }
