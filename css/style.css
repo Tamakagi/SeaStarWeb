@@ -22,7 +22,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../assets/back.png") center/cover no-repeat;
+  background: url("../assets/back.webp") center/cover no-repeat;
   transform: scale(1.03);
   filter: brightness(0.95) saturate(0.85);
   will-change: transform;
