@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -69,6 +70,27 @@ body {
   line-height: 2;
   text-align: center;
 }
+.about__story {
+  margin-top: 1rem;
+}
+.about__story summary {
+  cursor: pointer;
+  color: #8b6b3f;
+  font-weight: 600;
+  list-style: none;
+}
+.about__story summary::-webkit-details-marker {
+  display: none;
+}
+.about__story summary::after {
+  content: "続きを読む";
+}
+.about__story[open] summary {
+  display: none;
+}
+.about__story p:first-of-type {
+  margin-top: 1.5rem;
+}
 .about__block {
   width: 100%;
   max-width: 720px;
@@ -131,6 +153,38 @@ body {
 .about__block ul li:last-child {
   padding-bottom: 0;
 }
+.about__block dl {
+  margin: 0;
+}
+.about__block dt {
+  margin-top: 1.75rem;
+  color: #222;
+  font-weight: 700;
+  line-height: 1.8;
+}
+.about__block dt:first-child {
+  margin-top: 0;
+}
+.about__block dd {
+  margin: 0.75rem 0 0 1.5rem;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 2;
+}
+.about__warning {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid #c8a96a;
+  border-radius: 8px;
+  background: rgba(255, 250, 240, 0.65);
+}
+.about__warning p {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.72);
+  line-height: 1.9;
+}
+.about__warning p + p {
+  margin-top: 0.8rem;
+}
 .about__note {
   margin-top: 1.75rem;
   color: rgba(0, 0, 0, 0.55);
@@ -186,6 +240,21 @@ body {
   .about__block ul li {
     font-size: 0.95rem;
     line-height: 1.9;
+  }
+  .about__block dt {
+    font-size: 0.95rem;
+  }
+  .about__block dd {
+    margin-left: 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.9;
+  }
+  .about__warning {
+    padding: 1rem 1.25rem;
+  }
+  .about__warning p {
+    font-size: 0.95rem;
+    line-height: 1.8;
   }
   .about__note {
     font-size: 0.85rem;

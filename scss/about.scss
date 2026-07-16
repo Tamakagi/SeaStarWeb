@@ -29,7 +29,7 @@ body {
         position: absolute;
         inset: 0;
 
-        background: url("../assets/back.webp") center /cover no-repeat fixed;
+        background: url("../assets/back.webp") center / cover no-repeat fixed;
 
         filter:
             brightness(.85)
@@ -97,6 +97,35 @@ body {
         font-size: 1.05rem;
         line-height: 2;
         text-align: center;
+    }
+
+    &__story {
+        margin-top: 1rem;
+
+        summary {
+            cursor: pointer;
+
+            color: #8b6b3f;
+
+            font-weight: 600;
+            list-style: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: "続きを読む";
+        }
+
+        &[open] summary {
+            display: none;
+        }
+
+        p:first-of-type {
+            margin-top: 1.5rem;
+        }
     }
 
     &__block {
@@ -187,6 +216,53 @@ body {
                 }
             }
         }
+
+        dl {
+            margin: 0;
+        }
+
+        dt {
+            margin-top: 1.75rem;
+
+            color: #222;
+
+            font-weight: 700;
+            line-height: 1.8;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        dd {
+            margin: .75rem 0 0 1.5rem;
+
+            color: rgba(0, 0, 0, .75);
+
+            line-height: 2;
+        }
+    }
+
+    &__warning {
+        margin-top: 2rem;
+        padding: 1.25rem 1.5rem;
+
+        border-left: 4px solid #c8a96a;
+        border-radius: 8px;
+
+        background: rgba(255, 250, 240, .65);
+
+        p {
+            margin: 0;
+
+            color: rgba(0, 0, 0, .72);
+
+            line-height: 1.9;
+        }
+
+        p + p {
+            margin-top: .8rem;
+        }
     }
 
     &__note {
@@ -263,6 +339,26 @@ body {
                     font-size: .95rem;
                     line-height: 1.9;
                 }
+            }
+
+            dt {
+                font-size: .95rem;
+            }
+
+            dd {
+                margin-left: 1.25rem;
+
+                font-size: .95rem;
+                line-height: 1.9;
+            }
+        }
+
+        &__warning {
+            padding: 1rem 1.25rem;
+
+            p {
+                font-size: .95rem;
+                line-height: 1.8;
             }
         }
 
