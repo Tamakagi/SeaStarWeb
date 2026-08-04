@@ -19,7 +19,6 @@ body {
     justify-content: center;
     align-items: center;
 
-    /* 背景画像 */
     &::before {
         content: "";
         position: absolute;
@@ -36,7 +35,6 @@ body {
         will-change: transform;
     }
 
-    /* 白いベール */
     &::after {
         content: "";
         position: absolute;
@@ -69,10 +67,20 @@ body {
 
     &__content {
         width: min(1200px, 100%);
+
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
     }
 
     &__title {
-        margin-bottom: 3rem;
+        margin: 0;
 
         text-align: center;
 
@@ -86,17 +94,20 @@ body {
     }
 }
 
+
 /* ==========================
     Grid
 ========================== */
 
-.cast-grid {
+.cast-grid,
+.staff-grid {
     display: grid;
 
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 
     gap: 2rem;
 }
+
 
 /* ==========================
     Card
@@ -112,6 +123,8 @@ body {
     border: 2px solid rgba(195, 155, 0, .95);
 
     box-shadow: 0 20px 60px rgba(0, 0, 0, .12);
+
+    cursor: pointer;
 
     transition:
         transform .25s,
@@ -175,6 +188,7 @@ body {
     }
 }
 
+
 /* ==========================
     Modal
 ========================== */
@@ -236,10 +250,10 @@ body {
     cursor: pointer;
 
     transition: background .2s;
-}
 
-.close:hover {
-    background: rgba(0, 0, 0, .8);
+    &:hover {
+        background: rgba(0, 0, 0, .8);
+    }
 }
 
 
@@ -248,19 +262,26 @@ body {
 ========================== */
 
 @media (max-width: 1024px) {
-    .cast-grid {
+    .cast-grid,
+    .staff-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 
 @media (max-width: 768px) {
     .cast {
         &__overlay {
             padding: 2rem 1rem;
         }
+
+        &__content {
+            gap: 3rem;
+        }
     }
 
-    .cast-grid {
+    .cast-grid,
+    .staff-grid {
         grid-template-columns: repeat(2, 1fr);
 
         gap: 1.5rem;
@@ -285,8 +306,10 @@ body {
     }
 }
 
+
 @media (max-width: 480px) {
-    .cast-grid {
+    .cast-grid,
+    .staff-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }

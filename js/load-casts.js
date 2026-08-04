@@ -3,6 +3,7 @@ fetch("data/casts-data.json")
   .then((response) => response.json())
   .then((data) => {
     const castGrid = document.querySelector(".cast-grid");
+    const staffGrid = document.querySelector(".staff-grid");
 
     data.casts.forEach((cast) => {
       const card = document.createElement("div");
@@ -21,14 +22,22 @@ fetch("data/casts-data.json")
         <div class="cast-card__body">
           <h2 class="cast-card__name">${cast.name}</h2>
           <p class="cast-card__role">${cast.role}</p>
-          <p class="cast-card__description">役者:${cast.description}</p>
+          <p class="cast-card__description">役者：${cast.description}</p>
         </div>
       `;
-      //キャストカードにクリックイベントを追加
+
+      // カードクリックでモーダル表示
       card.addEventListener("click", () => {
         showModal(cast);
       });
-      castGrid.appendChild(card);
+
+      // staff:true の場合はSTAFFへ
+      if (cast.staff) {
+        staffGrid.appendChild(card);
+      } else {
+        // それ以外はCASTへ
+        castGrid.appendChild(card);
+      }
     });
   })
   .catch((error) => {
@@ -53,6 +62,7 @@ function showModal(cast) {
 
   modalImage.src = `./assets/cast-detail/${cast.image}`;
 }
+
 // クロスボタンでモーダルを閉じる
 closeModal.addEventListener("click", closeModalHandler);
 

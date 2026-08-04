@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -17,7 +16,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* 背景画像 */
 }
 .cast::before {
   content: "";
@@ -27,9 +25,6 @@ body {
   transform: scale(1.03);
   filter: brightness(0.95) saturate(0.85);
   will-change: transform;
-}
-.cast {
-  /* 白いベール */
 }
 .cast::after {
   content: "";
@@ -50,9 +45,17 @@ body {
 }
 .cast__content {
   width: min(1200px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.cast__section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 .cast__title {
-  margin-bottom: 3rem;
+  margin: 0;
   text-align: center;
   color: #222;
   font-size: clamp(2.8rem, 5vw, 4rem);
@@ -63,7 +66,8 @@ body {
 /* ==========================
     Grid
 ========================== */
-.cast-grid {
+.cast-grid,
+.staff-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
@@ -78,6 +82,7 @@ body {
   background: rgba(255, 255, 255, 0.92);
   border: 2px solid rgba(195, 155, 0, 0.95);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
   transition: transform 0.25s, box-shadow 0.25s;
 }
 .cast-card:hover {
@@ -163,7 +168,6 @@ body {
   cursor: pointer;
   transition: background 0.2s;
 }
-
 .close:hover {
   background: rgba(0, 0, 0, 0.8);
 }
@@ -172,7 +176,8 @@ body {
     Responsive
 ========================== */
 @media (max-width: 1024px) {
-  .cast-grid {
+  .cast-grid,
+  .staff-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -180,7 +185,11 @@ body {
   .cast__overlay {
     padding: 2rem 1rem;
   }
-  .cast-grid {
+  .cast__content {
+    gap: 3rem;
+  }
+  .cast-grid,
+  .staff-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
@@ -198,7 +207,8 @@ body {
   }
 }
 @media (max-width: 480px) {
-  .cast-grid {
+  .cast-grid,
+  .staff-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=cast.css.map */

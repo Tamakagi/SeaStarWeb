@@ -4,13 +4,15 @@
       "name": "ユリウス・シースター",
       "role": "家令(ハウススチュワード)",
       "description": "---yuri---",
-      "image": "yuri.webp"
+      "image": "yuri.webp",
+      "staff": true
     },
     {
       "name": "てばさき",
       "role": "執事",
       "description": "てばサキ",
-      "image": "eira.webp"
+      "image": "eira.webp",
+      "staff": true
     },
     {
       "name": "たま",
@@ -70,13 +72,15 @@
       "name": "アトラ",
       "role": "執事",
       "description": "白桃Aラ兎",
-      "image": "アトラ.webp"
+      "image": "アトラ.webp",
+      "staff": true
     },
     {
       "name": "ティアレス",
       "role": "執事",
       "description": "てぃけ",
-      "image": "ティアレス.webp"
+      "image": "ティアレス.webp",
+      "staff": true
     },
     {
       "name": "アキラ",
@@ -89,12 +93,6 @@
       "role": "スカラリーメイド",
       "description": "チキン食え",
       "image": "レイラ.webp"
-    },
-    {
-      "name": "ハナリー",
-      "role": "ウェイティングメイド",
-      "description": "おはなまろん",
-      "image": "ハナリー.webp"
     },
     {
       "name": "カルム",
